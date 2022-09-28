@@ -1,0 +1,3 @@
+numIDDec = input('Apropa la teva targeta al lector\n')
+numIDHex = hex(int(numIDDec)).upper()
+print('El teun num de ID és numID: '+numIDHex)
