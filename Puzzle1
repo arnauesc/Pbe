@@ -1,3 +1,8 @@
-numIDDec = input('Apropa la teva targeta al lector\n')
-numIDHex = hex(int(numIDDec)).upper()
-print('El teun num de ID és numID: '+numIDHex)
+import getpass
+form colorama import Fore, init
+init()
+
+numIDDec = getpass.getpass(Fore.GREEN+'Apropa la teva targeta al lector\n')
+numIDHex = hex(int(numIDDec))[2:]
+numID = bytearray.fromhex(numIDHex)[::-1].hex().upper()
+print(Fore.RESET+'El teun num de ID és numID: '+Fore.GREEN+numID)
